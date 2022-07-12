@@ -63,6 +63,10 @@ public class StepDefiniations {
 
 	}
 	
+	@Then("I should test")
+	public void i_should_test() {
+	}
+	
 	@Then("I click on Request Loan")
 	public void i_click_on_request_loan() {
 		ap = new ApplyLoan(driver);
