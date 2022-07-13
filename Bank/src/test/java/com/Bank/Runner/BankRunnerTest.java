@@ -16,6 +16,6 @@ import io.cucumber.junit.CucumberOptions;
 		)
 
 
-public class BankRunner {
+public class BankRunnerTest {
 
 }
