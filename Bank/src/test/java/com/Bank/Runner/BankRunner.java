@@ -6,9 +6,10 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features="/Users/suhas/Desktop/Class/Bank/src/test/Resources/Features",
+		features="/Users/suhas/git/Bank/Bank/src/test/Resources/Features",
 		glue="com.Bank.StepDef",
-		plugin= {"pretty","html:/Users/suhas/Desktop/Class/Bank/target/Htmlreports/reports.html"},
+		plugin= {"pretty","html:/Users/suhas/git/Bank/Bank/target/Htmlreports/reports.html",
+				"json:/Users/suhas/git/Bank/Bank/target/jsonreports/reports.json"},
 		monochrome=true,
 		tags= "@tc002"
 		

@@ -25,7 +25,7 @@ public class StepDefiniations {
 	@Before
 	@Given("I open web browser")
 	public void i_open_web_browser() {
-		System.setProperty("webdriver.chrome.driver", "/Users/suhas/Desktop/Class/Bank/src/test/Resources/Drivers/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "/Users/suhas/git/Bank/Bank/src/test/Resources/Drivers/chromedriver");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().pageLoadTimeout(5, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
@@ -95,8 +95,9 @@ public class StepDefiniations {
 	}
 
 	@Then("I click on Apply loan")
-	public void i_click_on_apply_loan() {
+	public void i_click_on_apply_loan() throws InterruptedException {
 		ap.applyLoan();
+		Thread.sleep(5000);
 		String expected = "Loan Request Processed'";
 		String actual = ap.message();
 		Assert.assertEquals(expected, actual);
