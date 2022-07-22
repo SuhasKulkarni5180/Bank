@@ -11,7 +11,7 @@ import io.cucumber.junit.CucumberOptions;
 		plugin= {"pretty","html:/Users/suhas/git/Bank/Bank/target/Htmlreports/reports.html",
 				"json:/Users/suhas/git/Bank/Bank/target/jsonreports/reports.json"},
 		monochrome=true,
-		tags= "@tc002"
+		tags= "@tc001"
 		
 		)
 
